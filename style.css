@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header h2 {
+  font-weight: lighter;
+}
+
+header .logo {
+  display: flex;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+header {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(36, 35, 35);
+  padding: 10px;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-right: 1px solid black;
+  background-color: rgb(36, 35, 35);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.nav-link a:hover {
+  background-color: rgba(87, 85, 85, 0.555);
+}
+
+.nav-link li {
+  list-style: none;
+}
+
+.nav-link {
+  display: flex;
+}
+
+nav input {
+  border-radius: 10px !important;
+  border: 1px solid #aca;
+  outline: none;
+  padding: 2px 5px;
+}
+
+main .container {
+  margin: 20px;
+  display: flex;
+}
+
+.card-wrapper h2 {
+}
+
+.card-wrapper {
+  /* border: 1px solid #aca; */
+}
+
+.side-wrapper {
+  padding: 0 20px 40px 50px;
+}
+
+.side-wrapper .side-link {
+  margin-top: 40px;
+}
+
+.about p {
+  font-size: 12px;
+}
+
+.side-link ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.side-link ul li a {
+  text-decoration: none;
+}
+
+.card {
+  margin-top: 10px;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aca;
+  box-shadow: 2px 2px 5px #aac;
+  position: relative;
+}
+
+.card p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.card .card-other span {
+  font-size: 11px;
+  color: rgb(106, 109, 106);
+  padding: 5px;
+  box-shadow: 1px 1px 3px rgb(155, 158, 155);
+  border-radius: 5px;
+  width: max-content;
+}
+
+.card .card-image {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images.jpg");
+}
+
+.card .card-footer {
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  main .container {
+    flex-direction: column !important;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card .card-image {
+    align-self: center;
+  }
+
+  .card p {
+    margin-bottom: 40px;
+  }
+
+  .side-wrapper {
+    margin-top: 50px;
+    padding: 20px !important;
+  }
+}
